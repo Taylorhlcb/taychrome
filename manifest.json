@@ -1,14 +1,12 @@
 {
   "manifest_version": 2,
 
-  "name": "Modify CSS and HTML",
+  "name": "Twitch Following List CSS",
   "version": "0.0.1",
-  "description": "Style twitch",
-  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+  "description": "Creates a styling for the followed channel list to make them bigger",
 
   "content_scripts": [{
     "js": [ "/lib/js/jquery-3.2.1.js", "vars.js", "content.js" ],
     "matches": ["https://www.twitch.tv/directory/following/*"]
   }]
-
 }
